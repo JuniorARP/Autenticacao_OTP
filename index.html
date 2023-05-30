@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Autenticação via OTP</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="shortcut icon" href="img/Favicon.png" />
+</head>
+
+<body>
+  <div id="formalario">
+
+    <h1>Autenticação via OTP</h1>
+
+    <p>Entre com as credenciais.</p>
+
+    <form action="Confirmacao.php" method="POST">
+
+      <div class="campo_formulario">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" pattern="autenticar@autenticar.com" name="email" required placeholder="E-mail" />
+      </div>
+
+      <div class="campo_formulario">
+        <label for="password">Senha</label>
+        <input type="password" id="password" pattern="12345" name="senha" required placeholder="Senha" maxlength="5"
+          title="A senha é 12345" />
+      </div>
+
+      <input class="botao" type="submit" value="Entrar" />
+    </form>
+
+
+    <section id="instrucoes">
+
+      <h1>INSTRUÇÕES DE USO</h1>
+
+      <p>E-mail: autenticar@autenticar.com</p>
+      <p>Senha: 12345 </p>
+
+    </section>
+  </div>
+</body>
+
+<footer>
+  Desenvolvido por Arthur Rosa, Gabriel Lins e Luan Henrique.</a>
+</footer>
+
+</html>
